@@ -1,0 +1,180 @@
+import { Box, Container , Grid } from '@mui/material'
+import React from 'react'
+import Header from '../../components/header/Header'
+import Chat from '../../components/serviceReminder/Chat'
+import Equipment from '../../components/serviceReminder/Equipment'
+import Barcharts from "../../components/barcharts/Barcharts"
+import Comments from "../../components/Comments/Comments"
+
+const Dashboard = () => {
+    return (
+        <Box m="20px" >
+
+            <Box>
+                <Header title={"Dashboard"} />
+            </Box>
+
+            <Box
+                display="grid"
+                gridTemplateColumns="repeat(12, 1fr)"
+                gridAutoRows="140px"
+                gap="20px"
+                padding="8px"
+            >
+
+                {/* row 1 */}
+                <Box
+                    gridColumn="span 3"
+                    backgroundColor="white"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    borderRadius="5px"
+                >
+                    <Chat />
+                </Box>
+
+                <Box
+                    gridColumn="span 3"
+                    backgroundColor="white"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    borderRadius="5px"
+                >
+                    <Equipment />
+                </Box>
+
+                <Box
+                    gridColumn="span 3"
+                    backgroundColor="white"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    borderRadius="5px"
+                >
+                    <Barcharts />
+                </Box>
+
+                <Box
+                    gridColumn="span 3"
+                    backgroundColor="white"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    borderRadius="5px"
+                >
+                    <Equipment />
+                </Box>
+
+                {/* row 2 */}
+
+                <Box
+                    gridColumn="span 3"
+                    backgroundColor="white"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    borderRadius="5px"
+                >
+                    <Barcharts />
+                </Box>
+
+                <Box
+                    gridColumn="span 6"
+                    gridRow="span 2"
+                    backgroundColor="white"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    borderRadius="5px"
+                >
+                    <Comments />
+                </Box>
+
+                <Box
+                    gridColumn="span 3"
+                    backgroundColor="white"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    borderRadius="5px"
+                >
+                    <Equipment />
+                </Box>
+
+                <Box
+                    gridColumn="span 3"
+                    backgroundColor="white"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    borderRadius="5px"
+                >
+                    <Chat />
+                </Box>
+
+                {/* row 3 */}
+                <Box
+                    gridColumn="span 3"
+                    backgroundColor="white"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    borderRadius="5px"
+                >
+                    <Chat />
+                </Box>
+
+                <Box
+                    gridColumn="span 3"
+                    backgroundColor="white"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    borderRadius="5px"
+                >
+                    <Equipment />
+                </Box>
+
+                <Box
+                    gridColumn="span 3"
+                    backgroundColor="white"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    borderRadius="5px"
+                >
+                    <Barcharts />
+                </Box>
+
+                <Box
+                    gridColumn="span 3"
+                    backgroundColor="white"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    borderRadius="5px"
+                >
+                    <Equipment />
+                </Box>
+
+                <Box
+                    gridColumn="span 3"
+                    backgroundColor="white"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    borderRadius="5px"
+                >
+                    <Equipment />
+                </Box>
+                
+            </Box>
+
+
+        </Box>
+    )
+}
+
+export default Dashboard
